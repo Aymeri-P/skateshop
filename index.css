@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(147, 54, 233);
+}
+
+body {
+    margin: 0; /* Set margin to 0 */
+    padding: 0;
+    background-color: lightslategray;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 20px 25px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+li button {
+    text-align: center;
+    text-decoration: none;
+    width: 8em;
+    height: 2em;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.ajouterElement{
+    margin-top: 7rem;
+}
+
+
+.ajout h2{
+    color: rgb(123, 255, 0);
+    margin-bottom: 10px;
+}
+
+.ajout{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.ajout form{
+    margin-left: 15px;
+}
