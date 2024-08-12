@@ -20,7 +20,7 @@
             <nav class="navbar">
                 <a href="skate.php">Skate</a>
                 <a href="accesoires.php">Accesoires</a>
-                <a href="vetement.php">Vêtements</a>
+                <a href="vetements.php">Vêtements</a>
                 <a href="chaussures.php">Chaussures</a>
                 <a href="Connection.php">Connexion</a>
             </nav>

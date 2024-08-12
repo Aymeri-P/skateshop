@@ -56,11 +56,11 @@ $infoskate = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </tr>
                 
             <?php foreach ($infoskate as $value) { ?>
-                <tr>
-                    <td><a href="pageInfo.php?nom=<?= urlencode($value["Nom"]) ?>&marque=<?= urlencode($value["Marque"]) ?>&taille=<?= urlencode($value["Taille"]) ?>&prix=<?= urlencode($value["Prix"]) ?>&image=<?= urlencode($value["lienImage"]) ?>"><?= $value["Nom"] ?></a></td>
-                    <td><?= $value["Marque"] ?></td>
-                    <td><?= $value["Taille"] ?></td>
-                    <td><?= $value["Prix"] ?></td>
+                <tr style="background-color: #333; color: #fff;">
+                    <td style="text-decoration: none; color: #fff; font-weight: bold;"><a href="pageInfo.php?nom=<?= urlencode($value["Nom"]) ?>&marque=<?= urlencode($value["Marque"]) ?>&taille=<?= urlencode($value["Taille"]) ?>&prix=<?= urlencode($value["Prix"]) ?>&image=<?= urlencode($value["lienImage"]) ?>"><?= $value["Nom"] ?></a></td>
+                    <td style="padding: 10px; text-align: center;"><?= $value["Marque"] ?></td>
+                    <td style="padding: 10px; text-align: center;"><?= $value["Taille"] ?></td>
+                    <td style="padding: 10px; text-align: center;"><?= $value["Prix"] ?></td>
                     <td><img src="img/skate/<?= $value["lienImage"] ?>" alt="Image du skate <?= $value["Nom"] ?>"></td>
                 </tr>
             <?php } ?>
